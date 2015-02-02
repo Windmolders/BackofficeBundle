@@ -1,0 +1,43 @@
+@treejs_path: '../@{vendor_path}/jstree';
+@treejs_url: '/vendor/jstree';
+
+/* jsTree default theme */
+@theme-name:				default;
+@hovered-bg-color:			#e7f4f9;
+@hovered-shadow-color:		#cccccc;
+@disabled-color:			#666666;
+@disabled-bg-color:			#efefef;
+@clicked-bg-color:			#beebff;
+@clicked-shadow-color:		#999999;
+@clicked-gradient-color-1:	#beebff;
+@clicked-gradient-color-2:	#a8e4ff;
+@search-result-color:		#8b0000;
+@mobile-wholerow-bg-color:	#ebebeb;
+@mobile-wholerow-shadow:	#666666;
+@mobile-wholerow-bordert:	rgba(255,255,255,0.7);
+@mobile-wholerow-borderb:	rgba(64,64,64,0.2);
+@responsive:				true;
+@image-path:				"@{treejs_url}/src/themes/default/";
+@base-height:				40px;
+
+@import "@{treejs_path}/src/themes/mixins.less";
+@import "@{treejs_path}/src/themes/base.less";
+@import "@{treejs_path}/src/themes/main.less";
+
+.tree-container {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857;
+  padding: 6px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  ul {
+    padding: 0;
+  }
+}
